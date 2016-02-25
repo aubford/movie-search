@@ -1,1 +1,5 @@
-<div ng-repeat=""></div>
+<div class="col-xs-6" ng-repeat="movie in movies">
+  <a href="#/movies/{{movie.imdbID}}">{{movie.Title}}</a>
+  <div class="separator"></div>
+  <p>{{movie.Year}}</p>
+</div>

@@ -2,9 +2,13 @@ var app = angular.module('movie-searchApp', ['ngRoute'])
 
 		app.config(function($routeProvider) {
 			$routeProvider
-				.when('/', {
+				.when('/movies', {
 					templateUrl: '../partials/index.html',
-					controller: 'IndexController'
+					controller: 'MainController'
 				})
-				.otherwise({redirectTo : '/'})
+				.when('/movies/:id', {
+					templateUrl: '../partials/show.html',
+					controller: 'ShowController'
+				})
+				.otherwise({redirectTo : '/movies'})
 		})
