@@ -1,0 +1,11 @@
+.center {
+  margin: 0 auto;
+}
+
+.hr {
+  border-bottom: 1px solid black;
+}
+
+.separator {
+  height: 10px;
+}
